@@ -427,4 +427,9 @@ body.status-page {
     .incident-update-item > p {
         display: inline-block;
     }
+
+    a.btn.btn-success {
+        position: relative;
+        top: -55px;
+    }
 }
