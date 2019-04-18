@@ -78,6 +78,11 @@ class CreateIncidentCommandHandler
             'status'   => $command->status,
             'visible'  => $command->visible,
             'stickied' => $command->stickied,
+            'comment'          => $command->comment,
+            'perpetrator_id'   => $command->perpetrator_id,
+            'show_comment'     => $command->show_comment,
+            'show_perpetrator' => $command->show_perpetrator,
+
         ];
 
         if ($template = IncidentTemplate::where('slug', '=', $command->template)->first()) {
@@ -151,6 +156,10 @@ class CreateIncidentCommandHandler
                 'message'          => $command->message,
                 'visible'          => $command->visible,
                 'notify'           => $command->notify,
+                'comment'          => $command->comment,
+                'perpetrator_id'   => $command->perpetrator_id,
+                'show_comment'     => $command->show_comment,
+                'show_perpetrator' => $command->show_perpetrator,
                 'stickied'         => $command->stickied,
                 'occurred_at'      => $command->occurred_at,
                 'component'        => Component::find($command->component_id) ?: null,

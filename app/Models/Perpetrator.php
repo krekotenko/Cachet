@@ -12,4 +12,10 @@ class Perpetrator extends Model
      * @var string[]
      */
     protected $fillable = ['name'];
+
+    public function incidents()
+    {
+        return $this->hasMany(Incident::class);
+    }
+
 }
