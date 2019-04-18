@@ -427,14 +427,19 @@ body.status-page {
     .incident-update-item > p {
         display: inline-block;
     }
-    .links {
-        display: inline-block;
-        width: 50%;
+
+    .app-banner{
+        .links {
+            display: inline-block;
+            width: 50%;
+        }
     }
-    .banner-image {
-        display: block;
-        max-width: 290px;
-        height: auto;
-        width: 100%;
+    .app-banner{
+        .banner-image {
+            display: block;
+            max-width: 290px;
+            height: auto;
+            width: 100%;
+        }
     }
 }
