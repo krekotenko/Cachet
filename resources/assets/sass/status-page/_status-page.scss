@@ -427,9 +427,14 @@ body.status-page {
     .incident-update-item > p {
         display: inline-block;
     }
-
-    a.btn.btn-success {
-        position: relative;
-        top: -55px;
+    .links {
+        display: inline-block;
+        width: 50%;
+    }
+    .banner-image {
+        display: block;
+        max-width: 290px;
+        height: auto;
+        width: 100%;
     }
 }
