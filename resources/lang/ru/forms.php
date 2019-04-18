@@ -57,6 +57,10 @@ return [
         ],
     ],
 
+    'incidents_perpetrator' => [
+        'name'               => 'Имя',
+    ],
+
     // Components form fields
     'components' => [
         'name'        => 'Название',
