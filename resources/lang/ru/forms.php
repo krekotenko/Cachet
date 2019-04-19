@@ -43,6 +43,8 @@ return [
         'status'             => 'Статус',
         'component'          => 'Компонент',
         'message'            => 'Сообщение',
+        'comment'            => 'Внутренний комментарий',
+        'show_on_site'       => 'Отображать на сайте',
         'message-help'       => 'Вы также можете использовать Markdown.',
         'scheduled_at'       => 'Когда запланированы работы?',
         'incident_time'      => 'Когда произошел инцидент?',
@@ -59,6 +61,7 @@ return [
 
     'incidents_perpetrator' => [
         'name'               => 'Имя',
+        'name_perpetrator'   => 'Виновник инцидента',
     ],
 
     // Components form fields
