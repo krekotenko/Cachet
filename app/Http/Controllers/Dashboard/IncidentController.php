@@ -298,6 +298,7 @@ class IncidentController extends Controller
     public function editTemplateAction(IncidentTemplate $template)
     {
         try {
+
             $template->update(Binput::get('template'));
         } catch (ValidationException $e) {
             return cachet_redirect('dashboard.templates.edit', ['id' => $template->id])
